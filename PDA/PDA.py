@@ -116,7 +116,7 @@ def check_nulls(df, fill_null=False, numeric_fill_value=0, text_fill_value='null
     Returns:
     - DataFrame with filled null values if fill_null is True, otherwise returns a summary of null values.
     """
-    logging.info(f"Starting null value check")
+    logging.info("Starting null value check")
     if fill_null:
         try:
             for column in df.columns:
